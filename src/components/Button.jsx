@@ -1,10 +1,13 @@
 import React from 'react'
 
-const Button = () => {
+const Button = (props) => {
+
+  let {text,isIconShopping} = props
+
   return (
     <button className="primary-button add-to-cart-button">
-      <img src="./icons/bt_add_to_cart.svg" alt="add to cart" />
-      Add to cart
+      {isIconShopping && <img src="./icons/bt_add_to_cart.svg" alt="add to cart" />}
+      {text}
     </button>
   )
 }

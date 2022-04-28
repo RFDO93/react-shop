@@ -19,7 +19,10 @@ const ModalInfoProduct = () => {
       />
       <div className="product-info">
         <ProductInfoPrice info={productInfo} />
-        <Button />
+        <Button
+          text={'Add to cart'}
+          isIconShopping={true}
+        />
       </div>
     </aside>
   );
